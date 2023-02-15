@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+	<head>
+
+		<title>|store|</title>
+		<meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		  <link rel ="stylesheet" href="css/home-search.css">
+		  <link rel ="stylesheet" href="css/signin_page.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		  <style>
+			.myDiv {
+			    border: 5px outset #DADDDB;
+				background-color: lightblue;
+				
+				width:372px;
+				height:372px;
+				
+			  	display: inline-block;
+			}
+			
+			
+			.subDiv{
+				background:white;
+				
+				width:362px;
+				height:250px;
+			}
+			.imageDiv{
+				width:50%;
+				height:250px;
+				display: inline-block;
+			}
+			.textDiv{
+				width:182px;
+				height:250px;
+				display: inline-block;
+			
+			}
+		
+			.imgAlg{
+				width:130px;
+				height:200px;
+				align-self:"center"";
+			}
+	
+			
+			
+		</style>
+		  
+	</head>
+	<body>
+		<div  class="jumbotron text-center">
+		  <h1>Welcome To Retail Sales Grocery Store</h1>
+		  <p>you can get 20% discount on every product</p>
+		<div class="topnav">
+				  <a  href="./">Home</a>
+				  <a href="#about">About</a>
+				  <a  href="/signin">Sign In</a>
+	   	 </div>
+	 </div>
+	 
+	 <div style= "width:100%;  height :372px" >
+		 <div class = "myDiv">
+		 
+			<div class = "subDiv">
+			
+				<div class="imageDiv">
+					<img th:src="@{/images/items/devohairfall.jpg}" class = "imgAlg">
+				</div>
+				
+				<div class="imageDiv">
+					<b>hair fall rescue 500ml</b><br><b>hair rescue 500ml</b><br><b>hair rescue 500ml</b>
+				</div>
+			</div>
+		</div>
+		 <div class="myDiv" >
+					<div class = "subDiv">
+				<img th:src="@{/images/items/devohairfall.jpg}" class = "imgAlg">
+							<b>hair rescue 500ml</b><b>hair rescue 500ml</b><b>hair rescue 500ml</b>
+				
+			</div>
+		</div>
+		 <div class="myDiv">
+				<div class = "subDiv">
+				<img th:src="@{/images/items/devohairfall.jpg}" class = "imgAlg">
+							<b>hair rescue	 500ml</b><b>hair rescue 500ml</b><b>hair rescue 500ml</b>
+				
+			</div>
+		</div>
+		 <div class="myDiv">
+				<div class = "subDiv">
+				<img th:src="@{/images/items/devohairfall.jpg}" class = "imgAlg">
+				<b>hair rescue 500ml</b>
+				
+			</div>
+		</div>
+	</div>
+	
+		 
+		 
+	</body>
+ </html>
+		 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+
+<title>|Home Page|</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="css/home-search.css">
+    <link rel ="stylesheet" href="css/signin_page.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+<div  class="jumbotron text-center">
+  <h1>Welcome To Retail Sales Grocery Store</h1>
+  <p>you can get 20% discount on every product</p>
+
+
+<div class="topnav">
+  <a href="./">Home</a>
+  <a href="#about">About</a>
+  </div>
+  </div>
+<!--   /{image}(image=${image}) -->
+
+<br>
+  <div align="center">
+    <form action="#" th:action="@{/insert_items}" th:object ="${item}" method="post" enctype="multipart/form-data"  id = "form_item">
+   		
+   		<h4 style = "color:red;text-align:center" th:text="${errorMsg}"></h4>
+   	
+   		<blockquote class="blockquote text-center">
+		  <h3  class="mb-0" style ="color:red" th:text=" ${resultMsg}" ></h3>
+		</blockquote>
+		  <div  align ="center">
+		  
+		    <label for="name" ><b>Item Name</b></label>
+		    <input type="text" placeholder="Enter Item Name" th:field="*{name}" required><br>
+		
+
+		    <label for="price"><b>Price</b></label>
+		    <input type="number" placeholder="Enter Price"  th:field="*{price}" required>
+			<br>
+<!-- 			<label for ="image"><b>Image</b></label> -->
+			 <label><b>Image</b></label>	
+			<input type = "file" name = "file" ><br>
+			
+		   <label for="quantity"><b>Quantity</b></label>
+		    <input type="number" placeholder="Enter Quantity"  th:field="*{quantity}" required><br>
+		<div align = "center">
+		    <button  type="submit">insert</button>
+		    <button   type="reset">Reset</button>
+	 	 </div>
+		  </div>
+		</form>
+
+  </div>
+  	
+		
+  
+</body>
+</html>

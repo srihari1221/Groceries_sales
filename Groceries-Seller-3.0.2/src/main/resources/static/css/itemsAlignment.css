@@ -1,0 +1,38 @@
+	.myDiv {
+			
+			    border: 5px outset #DADDDB;
+				background-color: lightblue;
+				text-align: center;
+				width:372px;
+				height:372px;
+				text-align:right;
+/* 			  	display: inline-block; */
+			  	 display: flex;
+            	flex-direction: row;
+			}
+			.inline{
+				display: inline-block;
+			}
+			
+			.subDiv{
+				background:white;
+				
+				width:362px;
+				height:250px;
+			}
+			.imgAlg{
+				width:130px;
+				height:200px;
+				align-self:"center";
+			}
+		.textMargin{
+				width:50%;
+				height:80%;
+				background:white;
+				
+			}
+		.imageMargin{
+				width:50%;
+				height:80%;
+			}
+			
